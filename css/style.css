@@ -21,7 +21,7 @@ section { text-align: center; padding-top: 40px; padding-bottom: 10px; display: 
 	.nav-menu-wrapper.nav-open-all { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); transform: translateX(0px); width: 100% }
 	.nav-menu-wrapper.nav-open-all .nav-scroller { width: 130% }
 }
-.intro { width: 100%; position: relative; background-image: url(../img/bg.jpg); background-size: cover; }
+.intro { width: 100%; position: relative; background-image: url(../img/my-bg.jpg); background-size: cover; }
 .intro .slogan { padding: 250px 0 60px; text-align: center }
 .intro .slogan h1 { color: #fff; line-height: 1.1em; margin-bottom: 20px; font-size: 40px }
 .intro .slogan p { color: #eee; margin-bottom: 50px; font-size: 20px }
