@@ -5,7 +5,7 @@ p { margin: 0 0 20px; font-size: 16px; line-height: 1.6em }
 a { color: #046556; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out; text-decoration: none }
 .intro a { color: #03fbd3; }
 a:hover, a:focus { text-decoration: none; color: #9b17ef; }
-.intro { position: fixed;left: 0;top: 0;width: 100%;height: 100%; background-image: url(../img/my-bg.jpg); background-size: cover; }
+.intro { position: fixed;left: 0;top: 0;width: 100%;height: 100%; /* background-image: url(../img/my-bg.jpg); background-size: cover; */ }
 .intro .slogan { padding: 250px 0 60px; text-align: center }
 .intro .slogan h1 { color: #fff; line-height: 1.1em; margin-bottom: 20px; font-size: 40px }
 .intro .slogan p { color: #eee; margin-bottom: 50px; font-size: 20px }
