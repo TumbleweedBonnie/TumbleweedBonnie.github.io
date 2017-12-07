@@ -9,6 +9,11 @@ a:hover, a:focus { text-decoration: none; color: #9b17ef; }
 .intro .slogan { padding: 250px 0 60px; text-align: center }
 .intro .slogan h1 { color: #fff; line-height: 1.1em; margin-bottom: 20px; font-size: 40px }
 .intro .slogan p { color: #eee; margin-bottom: 50px; font-size: 20px }
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 @media(min-width:767px) {
 	.intro { height: 100%; padding: 0; }
 }
@@ -18,10 +23,4 @@ a:hover, a:focus { text-decoration: none; color: #9b17ef; }
 }
 @media(max-width:480px) {
 	.intro .slogan { padding: 170px 0 60px; }
-    .intro .slogan p { font-size: 40px; }
-}
-#canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
 }
