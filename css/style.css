@@ -18,4 +18,10 @@ a:hover, a:focus { text-decoration: none; color: #9b17ef; }
 }
 @media(max-width:480px) {
 	.intro .slogan { padding: 170px 0 60px; }
+    .intro .slogan p { font-size: 40px; }
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

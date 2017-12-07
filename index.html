@@ -14,6 +14,12 @@
 
 <body>
 
+    <img id="cvs-img" alt="background" src="https://tumbleweedbonnie.github.io/img/my-bg.jpg" style="display: none;">
+
+    <div id="canvas-box">
+        <canvas id="canvas" width="1920" height="980"></canvas>
+    </div>
+
     <section class="intro">
         <div class="slogan">
             <h4>今天是我们在一起</h4>
@@ -23,6 +29,7 @@
     </section>
 
     <script src="js/count-up.js"></script>
+    <script src="js/rainy.js"></script>
 
     <script>
         var options = {
@@ -40,8 +47,26 @@
             } else {
                 document.getElementById('love-days').innerHTML = loveDays;
             }
-        }, 1000);    
-</script>
+        }, 1000);
+
+        window.onload = function () {
+            raining();
+        }
+
+        function raining() {
+            var image = document.getElementById('cvs-img');
+            image.onload = function () {
+                var engine = new RainyDay('canvas', 'cvs-img', window.innerWidth, window.innerHeight);
+                
+                engine.gravity = engine.GRAVITY_NON_LINEAR;
+                engine.trail = engine.TRAIL_DROPS;
+                engine.rain([engine.preset(3, 3, 0.88), engine.preset(5, 5, 0.9), engine.preset(6, 2, 1)], 100);
+            };
+
+            image.crossOrigin = 'anonymous';
+            image.src = 'https://tumbleweedbonnie.github.io/img/my-bg.jpg';
+        } 
+    </script>
 
 </body>
 </html>
