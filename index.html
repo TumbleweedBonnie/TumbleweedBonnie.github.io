@@ -22,9 +22,9 @@
 
     <section class="intro">
         <div class="slogan">
-            <h4>今天是我们在一起</h4>
+            <h4>我们在一起的日子</h4>
             <h1><span id="love-days" style="color: #f70903;font-size: 80px;"></span><span style="color: #f70903;font-size: 30px;">天</span></h1>
-            <p style="color: #333;">勿忘初心，方得始终</p>
+            <p style="color: #333;">多么开心，多么难忘，那些时光，那间屋</p>
         </div>  
     </section>
 
@@ -38,7 +38,9 @@
             separator: ',', 
             decimal: '.', 
         },
-        loveDays = Math.ceil((+new Date() - 1468319430000) / (1000*60*60*24)),
+        sTime = new Date('2016-07-12 18:30:00').getTime(),
+        eTime = new Date('2017-12-09 08:30:00').getTime(),
+        loveDays = Math.ceil((eTime - sTime) / (1000*60*60*24)),
         loveEle = new CountUp('love-days', 0, loveDays, 0, 3, options);
 
         setTimeout(function() {
